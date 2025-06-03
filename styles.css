@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: #fafafa;
+    font-family: Garamond, serif; /* Set font family here for the whole body */
+    color: black; /* Set a default text color */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em; /* Increased font size for better visibility */
+    margin-top: 20px; /* Added top margin for spacing */
+}
+
+
+
+.restart-button,
+.next-button, .bottom-button {
+    background-color: #fafafa; /* A light gray for button background */
+    color: black;
+    border: 2px solid #000000;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Garamond, serif;
+    text-decoration: none; /* Ensure no underlines on button links */
+}
+
+.container {
+    background-color: #fafafa;
+    padding: 5px;
+    max-width: 960px;
+    margin: 5px auto;
+    line-height: 1.8; /* Added top/bottom margin for visual separation */
+}
+
+.container2 {
+    font-style: italic;
+    background-color: #fafafa;
+    padding: 5px;
+    max-width: 960px;
+    margin: 5px auto;
+    line-height: 1.8;
+}
+
+.bottom-buttons-container, .next-button-container {
+    display: flex;
+    justify-content: center; /* Keep centered for single Next button */
+    padding-top: 20px;
+    gap: 10px;
+}
+
+/* Apply same hover to all buttons and button-like elements */
+.restart-button:hover,
+.next-button:hover,
+.bottom-button:hover {
+    background-color: #a2a2a2;
+}
+
+.image-container {
+    display: flex; /* Enable flexbox for the container */
+    flex-direction: row; /* Arrange items in a row (horizontally) */
+    align-items: center; /* Vertically align items in the center (optional) */
+    justify-content: center; /* Horizontally align items in the center (optional) */
+    gap: 20px; /* Add some space between the images (adjust as needed) */
+}
+
+.image-container img {
+    max-width: 50%; /* Optional: Limit the width of each image to take up half the container */
+    height: auto;
+}
