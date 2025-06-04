@@ -33,7 +33,9 @@ h1 {
     padding: 5px;
     max-width: 960px;
     margin: 5px auto;
-    line-height: 1.8; /* Added top/bottom margin for visual separation */
+    line-height: 1.8;
+    border: 2px solid #000000;
+    border-radius: 5px; /* Added top/bottom margin for visual separation */
 }
 
 .container2 {
