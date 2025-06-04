@@ -1,9 +1,11 @@
 body {
     margin: 0;
-    background-color: #fafafa;
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     font-family: Garamond, serif; /* Set font family here for the whole body */
     color: black; /* Set a default text color */
 }
+
 
 h1 {
     text-align: center;
