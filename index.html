@@ -32,38 +32,23 @@
         <h3>Design Decisions and Rationale:</h3>
         <ul>
           <li>
-            <strong>Color Scale Compression (-1):</strong>  
-            A compressed sequential blues scale (from #ffffff to #2171b5) was used to minimize visual contrast and suggest stability across states. This subtly shapes perception, as viewers interpret small differences as negligible even when variation exists. While the data remain accurate, the color similarity downplays disparities. We considered binning or bucketing values, but that felt too overt; this approach preserves data integrity while achieving a gentler, more persuasive visual effect.
+            <strong>Color Scale Compression (-1):</strong><br>  
+            A compressed sequential blues scale (from #ffffff to #2171b5) was used to minimize visual contrast and suggest stability across states. This subtly shapes perception, as viewers interpret small differences as negligible even when variation exists. While the data remain accurate, the color similarity downplays disparities. We considered binning or bucketing values, but that felt too overt. This approach preserves data integrity while achieving a gentler, more persuasive visual effect.
           </li>
         
           <li>
-            <strong>Narrow Data Range (+1):</strong>  
+            <strong>Narrow Data Range (+1):</strong><br>
             We capped the color scale at 17.1, the maximum rate in Illinois, which is a standard, earnest approach since scales often end at the data maximum. However, by pairing this with a relatively lighter dark-blue endpoint, we subtly enhanced the perception of uniformity across states. We considered using a consistent max of 25 for both graphs to maintain comparability, but since the maps are viewed in isolation, using a lighter maximum color reinforced our narrative of steady, equitable access while staying data-accurate.
           </li>
         
           <li>
-            <strong>Subtle Reinforcement in Title/Subtitle (+1):</strong>  
+            <strong>Subtle Reinforcement in Title/Subtitle (+1):</strong><br>
             We used a direct, affirmative title (“Midwest Residents Enjoy Equitable Abortion Access”), paired with a subtle subtitle that emphasizes the fairly consistent distribution of care. This choice is earnest, as it accurately describes the data, but it also reinforces the narrative by framing the map as a story of equity before viewers even analyze the visual. Alternative, more neutral options (e.g., “Abortion Rates by State Residence”) would have been factually correct but less persuasive. The selected phrasing works well because it draws attention to the uniformity of rates without misrepresenting any numbers, giving the visualization rhetorical power while staying ethically grounded.
           </li>
         
           <li>
-            <strong>Text Annotation/Caption (-2):</strong>  
+            <strong>Text Annotation/Caption (-2):</strong><br>
             We added a descriptive annotation (“Most Midwest states report 6–10 abortions per 1,000 women, indicating broadly similar access”) directly under the map. While the numbers are accurate, the phrasing selectively emphasizes uniformity and downplays any variation between states, subtly guiding the viewer toward the intended conclusion. Alternative options could have simply displayed raw numbers or omitted the annotation, but we chose this wording to reinforce the narrative of equity, making the visualization more persuasive while staying technically true.
-          </li>
-        
-          <li>
-            <strong>State Grouping & Map Focus (+1):</strong>  
-            We focused specifically on the Midwestern states rather than the entire U.S., grouping states that are socially and geographically comparable. This narrows the viewer’s attention to the region of interest and prevents outlier states from skewing perception. While this choice highlights regional equity, it is also honest because it reflects the actual geographic focus of our data.
-          </li>
-        
-          <li>
-            <strong>Legend Simplification (+1):</strong>  
-            The legend was simplified to show only four distinct ranges of abortion rates instead of a continuous gradient. This reduces cognitive load and helps viewers quickly grasp the overall pattern of access without misinterpreting minor differences. The approach is factually correct while subtly guiding the viewer to see consistency.
-          </li>
-        
-          <li>
-            <strong>Minimal Use of Contrasting Colors (-1):</strong>  
-            We avoided using bright or divergent colors that might exaggerate differences. By keeping the palette monotone and harmonious, the map appears calm and uniform, subtly reinforcing the narrative of equity. Though the data do include minor variations, the visual emphasis on sameness gently shapes interpretation.
           </li>
         </ul>
       </section>
