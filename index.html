@@ -62,26 +62,25 @@
         </figure>
 
         <h3>Design Decisions and Rationale:</h3>
-
         <ul>
           <li>
-            <strong>Geographical Focus (+0.5):</strong><br>
-            The map uses the same compact Midwest zoom as the “for” figure. This isolates the region of interest, making differences between states more visible. While earnest in maintaining regional focus, it subtly emphasizes the disparities in access by visually enlarging the gaps between high- and low-rate states. We considered showing the full U.S., but it would dilute the focus on uneven access within the Midwest.
+            <strong>Expanded Color Scale (-1):</strong><br>
+            We used a sequential blues scale with pronounced gradations (#ffffff to #08519c) to maximize contrast between neighboring states and highlight imbalances in abortion access. This exaggerates visual differences without manipulating the underlying data. We considered binning or bucketing values to leverage the skew effect, but this approach preserves data integrity while subtly pushing the narrative that abortion access is concentrated in a few hotspots.
           </li>
-      
+        
           <li>
-            <strong>Expanded Color Scale (-1.5):</strong><br>
-            A sequential blues scale ranging from #ffffff to #08519c exaggerates differences in procedure rates. By increasing contrast and extending the range to 21.3 (the max in Illinois), viewers can quickly see sharp disparities between states. This is persuasive because it makes the concentration of procedures in a few states more striking, even though the underlying data are accurate. Alternatives included a compressed scale like the “for” map, but that would downplay the variation we want to highlight.
+            <strong>Geographical Focus (0):</strong><br>
+            Choosing to restrict this visualization to Midwestern states is not inherently earnest or deceptive. During exploratory data analysis, we observed that differences in abortion access are most pronounced in the Midwest, so focusing here best highlights regional imbalances. We considered showing the entire U.S. map but ultimately focused on the Midwest to reinforce this side of the proposition.
           </li>
-      
+        
           <li>
-            <strong>Hover & Interactivity Enhancement (0):</strong><br>
-            The hover tool displays precise state-level data for occurrence rates, allowing viewers to inspect specific values. This is an earnest choice, as it adds transparency and detail without exaggerating differences. We considered adding annotations for every state, but that would clutter the map; hover interactivity balances detail with readability.
+            <strong>Leading Title/Subtitle Combination (-1.5):</strong><br>
+            The title (“Few Midwest States Offer Broad Abortion Access”) directly highlights the uneven distribution of abortion care, which is further strengthened by the subtitle’s mention of care gaps. This is persuasive because it frames the map as a story of scarcity before viewers even analyze the data. While factually accurate, the wording emphasizes the extremes and scarcity rather than providing a neutral description (e.g., “Abortion Rates by State of Occurrence”). We considered alternative phrasing, but we chose the current wording to emphasize the imbalance across states.
           </li>
-      
+        
           <li>
-            <strong>Comparative Caption (-1):</strong><br>
-            The caption explicitly highlights that Illinois performs 200× more procedures than Missouri. While factually correct, this phrasing selectively emphasizes the extreme disparity, reinforcing the narrative that access is highly unequal. We could have used a more neutral caption like “Procedure rates vary across states,” but the chosen wording strengthens the persuasive impact while staying data-accurate.
+            <strong>Comparative Text Annotation/Caption (+1.5):</strong><br>
+            The caption (“Illinois performs 200× more procedures than neighboring Missouri”) underscores the dramatic concentration of services in a single state by comparing it to its immediate neighbor. This draws attention to disparities and reinforces the narrative of limited access. Since no data have been manipulated, this is technically accurate and selectively highlights extreme differences rather than reporting the full range of state values. A more neutral caption like “Procedure rates vary across states” was considered but would have reduced the persuasive impact of comparing the two extreme states.
           </li>
         </ul>
       </section>
